@@ -65,6 +65,7 @@ Now let us change the url.py file to change the url so it pairs with our new vie
 
 When accessing /myapp/connection, you will get to see the following page −
  ![](images/session1.jpg)
+
 And you will get redirected to the following page −
  ![](images/session2.jpg)
 
