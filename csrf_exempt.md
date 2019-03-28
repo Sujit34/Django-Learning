@@ -1,4 +1,4 @@
-# @csrf_exempt ?
+# @csrf_exempt 
 
 #### Csrf exempt is a cool feature of django which allows bypassing of csrf verification by django.
 
@@ -22,6 +22,6 @@ def public_api(request):
 ```
 Above API will allow a post call without adding csrf parameter in it. 
 
-
+> Source - https://khalsalabs.com/csrf-exempt-in-django/
 
 
