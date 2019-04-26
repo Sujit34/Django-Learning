@@ -21,26 +21,35 @@ Model metadata is “anything that’s not a field”, such as ordering options 
 A complete list of all possible Meta options 
 
 
-*abstract
+* abstract
+
  Options.abstract
+
 	If abstract = True, this model will be an abstract base class.
 
-*app_label
+
+* app_label
+
  Options.app_label
+
 	If a model is defined outside of an application in ```INSTALLED_APPS```, it must declare which app it belongs to:
 ```python
 app_label = 'myapp'
 ```
 
-*db_table
+* db_table
+
  Options.db_table
+
 	The name of the database table to use for the model:
 ```python
 db_table = 'music_album'
 ```
 
-*get_latest_by
+* get_latest_by
+
  Options.get_latest_by
+
 	The name of a field or a list of field names in the model, typically DateField, DateTimeField, or IntegerField. This specifies the default field(s) to use in your model Manager’s latest() and earliest() methods.
 ```python
 # Latest by ascending order_date.
@@ -50,8 +59,10 @@ get_latest_by = "order_date"
 get_latest_by = ['-priority', 'order_date']
 ```
 
-*ordering
+* ordering
+
  Options.ordering
+
 	The default ordering for the object, for use when obtaining lists of objects:
 ```python
 ordering = ['-order_date']
@@ -77,19 +88,22 @@ from django.db.models import F
 ordering = [F('author').asc(nulls_last=True)]
 ```
 
-*verbose_name
+* verbose_name
+
  Options.verbose_name
+
 	A human-readable name for the object, singular:
 ```python
 verbose_name = "pizza"
 ```
 
-*verbose_name_plural
+* verbose_name_plural
+
  Options.verbose_name_plural
+
 	The plural name for the object:
 
 ```python
 verbose_name_plural = "stories"
-
- > Source: Stackoverflow and Django Official Doc.
 ```
+ > Source: Stackoverflow and Django Official Doc.
